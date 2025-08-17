@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import AddItem from "./pages/AddItem";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 import EditList from "./pages/EditList";
 import ListProvider from './context/ListProvider';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -18,7 +19,7 @@ function App() {
             <Route path="/addItem" element={<AddItem />} />
             <Route path="/login" element={<Login />} />
             <Route path="/update/:id" element={<EditList />} />
-            <Route path="/register" element={<h1>Register Page</h1>} />
+            <Route path="/register" element={<Signup />} />
           </Routes>
         </Router>
       </ListProvider>
