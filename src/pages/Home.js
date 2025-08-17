@@ -15,7 +15,7 @@ function Home() {
             }
 
             //console.log(`https://localhost:5000/list/delete/${id}`);
-            const response = await axios.delete(`http://localhost:5000/list/delete/${id}`, {
+            const response = await axios.delete(`https://to-do-app-backend-o5xs.onrender.com/list/delete/${id}`, {
                 headers: {
                     'Content-Type': 'application/json',
                     'authToken': localStorage.getItem('authToken') // Assuming you store the token in localStorage

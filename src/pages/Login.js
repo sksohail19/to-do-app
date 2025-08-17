@@ -10,7 +10,7 @@ function Login() {
     const handleSubmit = async (e) => {
         try {
             e.preventDefault();
-            const res = await axios.post("http://localhost:5000/auth/login", {
+            const res = await axios.post("https://to-do-app-backend-o5xs.onrender.com/auth/login", {
                 email,
                 password
         });

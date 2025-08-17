@@ -27,7 +27,7 @@ function AddItem() {
             return;
         }
         try {
-            const Item = await axios.post("http://localhost:5000/list/add", {
+            const Item = await axios.post("https://to-do-app-backend-o5xs.onrender.com/list/add", {
                 title,
                 type,
                 status,
