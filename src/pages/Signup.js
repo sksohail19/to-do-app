@@ -29,7 +29,7 @@ function Signup() {
                 },
                 body: JSON.stringify({ username, email, password })
             });*/
-            const response = await axios.post("https://to-do-app-backend-o5xs.onrender.com/auth/signup", { username, email, password }, 
+            const response = await axios.post("https://to-do-app-backend-ib5y.onrender.com/auth/signup", { username, email, password }, 
                {
                 "Content-Type": "application/json"
             });

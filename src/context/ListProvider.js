@@ -13,7 +13,7 @@ const ListProvider = (props) => {
             setLoading(true);
             console.log("Fetching list items...");
             if (localStorage.getItem('authToken') !== null) {
-                const response = await axios.get("https://to-do-app-backend-o5xs.onrender.com/list/getall", {
+                const response = await axios.get("https://to-do-app-backend-ib5y.onrender.com/list/getall", {
                     headers: {
                         'Content-Type': 'application/json',
                         'authToken': localStorage.getItem('authToken') // Assuming you store the token in localStorage

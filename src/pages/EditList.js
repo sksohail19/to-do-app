@@ -18,7 +18,7 @@ function EditList() {
     useEffect(() => {
         const fetchNote = async () => {
             try {
-                const res = await axios.get(`https://to-do-app-backend-o5xs.onrender.com/list/get/${id}`, {
+                const res = await axios.get(`https://to-do-app-backend-ib5y.onrender.com/list/get/${id}`, {
                     headers: {
                         'Content-Type': 'application/json',
                         'authToken': localStorage.getItem("authToken")
@@ -53,7 +53,7 @@ function EditList() {
         try {
             if (!!localStorage.getItem("authToken")) {
                 // Assuming you have an API endpoint to handle note updates
-                await axios.put(`https://to-do-app-backend-o5xs.onrender.com/list/update/${id}`, {
+                await axios.put(`https://to-do-app-backend-ib5y.onrender.com/list/update/${id}`, {
                     title,
                     description,
                     type,
